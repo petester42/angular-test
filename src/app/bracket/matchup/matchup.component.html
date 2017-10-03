@@ -1,3 +1,11 @@
 <div class="matchup">
-
+    <div class="team">
+        <div>{{ (data !== undefined ? data.homeID : "") | uppercase }}</div>
+        <div>{{ data !== undefined ? "0" : "" }}</div>
+    </div>
+    <div class="seperator"></div>
+    <div class="team">
+        <div>{{ (data !== undefined ? data.awayID : "") | uppercase }}</div>
+        <div>{{ data !== undefined ? "0" : "" }}</div>
+    </div>
 </div>

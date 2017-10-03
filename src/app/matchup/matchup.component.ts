@@ -11,14 +11,10 @@ export class MatchupComponent implements OnInit {
   @Input() title: string;
 
   constructor(
-    private bracketService: BracketService,
-    private route: ActivatedRoute
+    private bracketService: BracketService
   ) {}
 
   ngOnInit(): void {
-    this.route.url.subscribe(url => {
-      console.log(url[url.length - 1].path);
-      this.title = url[url.length - 1].path;
-    });
+   
   }
 }

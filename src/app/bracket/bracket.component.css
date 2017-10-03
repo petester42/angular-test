@@ -1,9 +1,14 @@
-.bracket {
+:host { 
+  flex: 1;
   display: flex;
-  flex: 1 1 auto;
+  max-width: 400pt;
+}
+
+.bracket {
+  flex: 1 1 auto;  
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 320pt;
 }
 
 .series {

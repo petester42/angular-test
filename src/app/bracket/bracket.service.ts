@@ -15,7 +15,7 @@ export class BracketService {
   getBracket(): Promise<any> {
     return this.http.get(this.url)
       .toPromise()
-      .then(response => response.json().data as Response)
+      .then(response => response.json() as Response)
       .catch(this.handleError);
   }
 

@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BracketMatchupComponent implements OnInit {
   @Input() title: string;
-
+  @Input() data: any;
+  
   constructor() {}
 
   ngOnInit(): void {
